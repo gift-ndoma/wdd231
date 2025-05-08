@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <meta name="description" content="This is a course home page for the wdd231 course by Gift Ndoma. It contains details of myself and my courses.">
+    <meta name="author" content="Gift Ndoma">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/display-courses.js" defer></script>
+    <script src="scripts/menu-button.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <title>Web Frontend Development I | Gift Ndoma</title>
 </head>
 <body>
-    <h1>WDD 231 - Gift Ndoma</h1>
+    <header>
+        <section class="intro">
+            <img src="images/profile.jpeg" alt="A profile photo of Gift Ndoma" width="150">
+            <h1>Gift Ndoma</h1>
+            <button type="button" id="hamButton"></button>
+        </section>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html" class="selected" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Chamber</a></li>
+                <li><a href="#" target="_blank">Final</a></li>
+                <li><a href="https://github.com/gift-ndoma" target="_blank">Github Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/gift-ndoma-59a9a82a8/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="grid">
+            <section class="section one">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section class="section two">
+                <h2>Ibadan, Nigeria</h2>
+                <figure>
+                    <img src="images/nigeria.jpg" alt="Nigeria Landscape" width="250" >
+                    <figcaption>Nigeria Peace Hand</figcaption>
+                </figure>
+            </section>
+            <section class="section three">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="btns">
+                    <button id="all-btn" type="button" class="btn">All</button>
+                    <button id="cse-btn" type="button" class="btn">CSE</button>
+                    <button id="wdd-btn" type="button" class="btn">WDD</button>
+                </div>
+                <p id="credit"></p>
+                <div id="container"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;  <span id="currentyear"></span> | Gift Ndoma | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
