@@ -14,7 +14,7 @@
       "address": "456 Flour St, Bakerville, BK 12345",
       "phone": "555-234-5678",
       "website": "https://bakersdelight.com",
-      "image": "bakers.png",
+      "image": "member-logo.jpg",
       "membershipLevel": 1,
       "description": "Family-owned bakery with fresh pastries daily."
     },
@@ -65,3 +65,4 @@
     }
   ]
 }
+

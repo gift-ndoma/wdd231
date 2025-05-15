@@ -16,10 +16,11 @@ const displayMembers = (members) => {
         let portrait = document.createElement("img");
         let website = document.createElement("p");
 
-        fullName.innerHTML = `${prophet.name} ${prophet.lastname}`;
+        fullName.innerHTML = `${member.name}`;
+        website.innerHTML = `${member.website}`
 
-        portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname}`);
+        portrait.setAttribute("src", member.imageurl);
+        portrait.setAttribute("alt", `Logo of ${member.name}.`);
         portrait.setAttribute("loading", "lazy");
         portrait.setAttribute("width", "300");
         portrait.setAttribute("height", "300");
