@@ -31,13 +31,13 @@
                 Timbuktu<br /><span class="h1-minor">Chamber of Commerce</span>
                 </h1>
             </div>
-            <button id="hamButton"></button>
+            <button id="hamButton" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks"></button>
             <ul id="navLinks">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><button type="button">🌓</button></li>
+                <li><button type="button" aria-label="Toggle dark mode">🌓</button></li>
             </ul>
         </nav>
     </header>
@@ -45,8 +45,8 @@
         <section class="main-header">
             <h2>Business Directory</h2>
             <div class="btns">
-                <button id="grid">Grid</button>
-                <button id="list">List</button>
+                <button id="grid" aria-pressed="true" aria-label="Show items in grid view">Grid</button>
+                <button id="list" aria-pressed="false" aria-label="Show items in list view">List</button>
             </div>
         </section>
         <div id="cards" class="grid"></div>
@@ -60,9 +60,9 @@
             <p>(223) 555-2300</p>
         </section>
         <section class="social-icons">
-            <a href="linkedin.com"><img src="images/linkedin.svg" width="40px"></a>
-            <a href="twitter.com"><img src="images/twitter.svg" width="40px"></img></a>
-            <a href="youtube.com"><img src="images/youtube.svg" width="45px"></a>
+            <a href="https://linkedin.com" aria-label="LinkedIn"><img src="images/linkedin.svg" width="40px" alt="LinkedIn Icon"></a>
+            <a href="https://twitter.com" aria-label="Twitter"><img src="images/twitter.svg" width="40px" alt="Twitter Icon"></a>
+            <a href="https://youtube.com" aria-label="YouTube"><img src="images/youtube.svg" width="45px" alt="YouTube Icon"></a>
         </section>
         <section class="my-details">
             <p>WDD231 Class project</p>
