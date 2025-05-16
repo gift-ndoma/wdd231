@@ -87,7 +87,7 @@ nav a:hover {
     align-items: center;
 }
 
-.main-header h2 {
+.main-header h1 {
     padding: 20px;
     font-family: var(--primary-font);
     color: var(--primary-color);
