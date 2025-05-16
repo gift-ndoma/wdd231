@@ -12,40 +12,59 @@
     <meta property="og:description" content="This website will serve as a resource hub for businesses in the city of Timbuktu.">
     <meta property="og:image" content="https://gift-ndoma.github.io/wdd231/chamber/images/logo.jpg">
     <meta property="og:url" content="https://gift-ndoma.github.io/wdd231/chamber/">
-    <meta property="" content="">
-    <meta property="" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
     <script src="/scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
     <title>Timbuktu | Chamber of Commerce</title>
 </head>
 <body>
     <header>
-        <img src="images/logo.jpg" alt="Timbuktu Company Logo" loading="lazy">
-        <h1>Timbuktu</h1>
-        <nav>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <p>🌓</p>
+        <nav id="nav">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Timbuktu Company Logo" loading="lazy" width="80" height="80" />
+                <h1>
+                Timbuktu<br /><span class="h1-minor">Chamber of Commerce</span>
+                </h1>
+            </div>
+            <button id="hamButton"></button>
+            <ul id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><button type="button">🌓</button></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div id="cards"></div>
+        <section class="main-header">
+            <h2>Business Directory</h2>
+            <div class="btns">
+                <button id="grid">Grid</button>
+                <button id="list">List</button>
+            </div>
+        </section>
+        <div id="cards" class="grid"></div>
     </main>
     <footer>
-        <section>
-            <h2>Timbuktu Chamber of Commerce</h2>
+        <section class="company-details">
+            <h3>Timbuktu Chamber of Commerce</h3>
             <p>10 Rue De La Paix</p>
             <p>Timbuktu, Mail 999</p>
             <p>info@timbuktucc.org</p>
             <p>(223) 555-2300</p>
         </section>
-        <section>
-            <a href="linkedin.com"><img src="images/linkedin.svg"></a>
-            <a href="twitter.com"><img src="images/twitter.svg"></img></a>
-            <a href="youtube.com"><img src="images/youtube.svg"></a>
+        <section class="social-icons">
+            <a href="linkedin.com"><img src="images/linkedin.svg" width="40px"></a>
+            <a href="twitter.com"><img src="images/twitter.svg" width="40px"></img></a>
+            <a href="youtube.com"><img src="images/youtube.svg" width="45px"></a>
         </section>
-        <section>
+        <section class="my-details">
             <p>WDD231 Class project</p>
             <p>Gift Ndoma</p>
             <p>&copy;  <span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
