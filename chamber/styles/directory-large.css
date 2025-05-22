@@ -64,6 +64,7 @@ nav ul li {
 }
 
 nav a {
+    display: block;
     text-decoration: none;
     color: #000;
     font-family: var(--primary-font);
