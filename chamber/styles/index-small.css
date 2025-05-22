@@ -1,0 +1,49 @@
+@media (max-width: 910px) {
+    .wlc-container a button {
+        padding: 10px 50px;
+        margin-top: 13rem;
+    }
+}
+
+@media (max-width: 738px) {
+    .wlc-msg h1 {
+        font-size: 2.2rem;
+    }
+
+    .wlc-msg p {
+        font-size: 1.2rem;
+    }
+
+    .wlc-container a button {
+        margin-top: 7rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 510px) {
+    .wlc-msg span {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .wlc-container a button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 445px) {
+    .wlc-msg h1 {
+        font-size: 1.3rem;
+    }
+
+    .wlc-msg p {
+        font-size: 1rem;
+    }
+
+    .wlc-container a button {
+        font-size: .9rem;
+        padding: 5px 8px;
+        margin-bottom: 30px;
+    }
+}
