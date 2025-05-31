@@ -1,6 +1,5 @@
 const businessInfo = new URLSearchParams(window.location.search);
 const memberDetails = document.querySelector(".member-details");
-console.log(businessInfo);
 
 memberDetails.innerHTML = `
 <p><b>First Name:</b> ${businessInfo.get('firstName') || ""}</p>

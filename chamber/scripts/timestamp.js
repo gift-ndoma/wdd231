@@ -8,5 +8,4 @@ document.addEventListener('DOMContentLoaded', function () {
   if (timestampField) {
     timestampField.value = readable;
   }
-  console.log(readable);
 });
