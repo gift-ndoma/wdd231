@@ -133,11 +133,27 @@ form button:hover {
     color: #344e41;
 }
 
+@keyframes changeBackground {
+    0%{
+        background-color: #f8eeee;
+        color: #000;
+    }
+    25%{
+        background-color: #588157;
+        color: #fff;
+    }
+    100% {
+        background-color: #a3b18a;
+        color: #000;
+    }
+}
+
 .membership-details div {
     background-color: #f8eeee;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 4px 4px 3px #dad7cd;
+    animation: changeBackground 5s ease-in-out infinite alternate;
 }
 
 .membership-details div h3 {
