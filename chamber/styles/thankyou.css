@@ -9,10 +9,10 @@
     --secondary-font: "Pacifico";
 }
 
-main {
+/* main {
     width: 80%;
     margin: 0 auto;
-}
+} */
 
 .thankyou-container {
     border: 2px #000;
@@ -34,9 +34,47 @@ main {
 
 .member-details {
     margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .member-details p {
-    padding-bottom: 10px;
+    padding: 10px;
     margin-left: 2.2rem;
+    border: 1px solid #696363;
+    font-family: var(--main-font); 
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.member-details p b {
+    color: #344e41;
+}
+
+.l-para {
+    margin-bottom: 1.5rem;
+}
+
+.home-btn {
+    float: right;
+    margin-right: 6rem;
+}
+
+.home-btn a {
+    text-decoration: none;
+    text-align: center;
+    background-color: #344e41;
+    padding: 10px 20px;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 10px;
+    font-family: var(--secondary-font);
+    letter-spacing: 1.8px;
+    font-weight: 200;
+}
+
+.home-btn a:hover {
+    background-color: #588157;
 }
