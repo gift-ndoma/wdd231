@@ -139,11 +139,11 @@ form button:hover {
         color: #000;
     }
     25%{
-        background-color: #588157;
-        color: #fff;
+        background-color: #f4faf4;
+        color: #000; 
     }
     100% {
-        background-color: #a3b18a;
+        background-color: #ffffff;
         color: #000;
     }
 }
