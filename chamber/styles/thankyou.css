@@ -1,0 +1,42 @@
+:root {
+    --main-color: #344e41;
+    --primary-color: #3a5a40;
+    --secondary-color: #588157;
+    --light-green: #a3b18a;
+    --ash-color: #dad7cd;
+    --main-font: "Josefin Sans";
+    --primary-font: "Lato";
+    --secondary-font: "Pacifico";
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.thankyou-container {
+    border: 2px #000;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.thankyou-container h1 {
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+
+.thankyou-container > p {
+    text-align: center;
+    font-size: 1.35rem;
+    font-family: var(--primary-font);
+}
+
+.member-details {
+    margin: 2rem 0;
+}
+
+.member-details p {
+    padding-bottom: 10px;
+    margin-left: 2.2rem;
+}

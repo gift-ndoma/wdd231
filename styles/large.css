@@ -186,3 +186,75 @@ footer {
     color: #ffba08;
     padding-top: 5px;
 }
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 60%;
+    max-width: 700px;
+    margin: 5rem auto;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    text-align: center;
+    background-color: #1d2d44;
+    color: #fff;
+    padding: 20px;
+    font-family: var(--main-font);
+    margin-bottom: 1.4rem;
+}
+
+dialog button {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+}
+
+dialog button:hover {
+    cursor: pointer;
+}
+
+dialog p {
+    font-family: var(--primary-font);
+}
+
+dialog h3 {
+    padding-bottom: 10px;
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+dialog #credits {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    color: #1d2d44;
+    font-style: italic;
+}
+
+dialog #certificate {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #1d2d44;
+}
+
+dialog #course-info {
+    word-spacing: 3px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+
+dialog #tools {
+    text-align: center;
+    color: #1d2d44;
+}

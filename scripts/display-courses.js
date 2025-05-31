@@ -106,6 +106,9 @@ function displayCourses(courses) {
     <h3>${content}  ${course.subject} ${course.number}</h3>
     <p>${course.title}</p>
     `
+    card.addEventListener("click", () => {
+        showItems(course)
+    })
 
     courseContainer.appendChild(card);
    })
@@ -125,4 +128,34 @@ wddBtn.addEventListener('click', () => {
 
 allBtn.addEventListener('click', () => {
     displayCourses(courses)
+})
+
+const closeButton = document.querySelector("#course-details button");
+const openDialog = document.querySelector("#course-details");
+const subject = document.querySelector("#course-details h2");
+const courseName = document.querySelector("#course-name");
+const credits = document.querySelector("#credits");
+const certificate= document.querySelector("#certificate");
+const courseInfo = document.querySelector("#course-info");
+const techTools = document.querySelector("#tools");
+
+closeButton.addEventListener("click", () => {
+    openDialog.close();
+})
+
+function showItems(x) {
+    console.log(x);
+    subject.innerHTML = `${x.subject} ${x.number}`;
+    courseName.innerHTML = x.title;
+    credits.innerHTML = `${x.credits} credits`;
+    certificate.innerHTML = `<b>Certificate: </b>${x.certificate}`;
+    courseInfo.innerHTML = x.description;
+    techTools.innerHTML = `<b>Technology: </b>${x.technology}`;
+    openDialog.showModal();
+}
+
+window.addEventListener("click", (event) => {
+    if (event.target == openDialog) {
+        openDialog.close();
+    }
 })
