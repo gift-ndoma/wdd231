@@ -34,4 +34,14 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+
+    .place-container section img {
+        transition: .75s;
+    }
+
+    .place-container section img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
 }
