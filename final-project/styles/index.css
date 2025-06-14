@@ -230,7 +230,7 @@
 .stat-card p {
     font-size: 1.1rem;
     opacity: 0.9;
-    font-size: var(--secondary-font);
+    font-family: var(--secondary-font);
 }
 
 /* Products Section */
