@@ -102,3 +102,29 @@ window.addEventListener('load', () => {
         document.body.style.opacity = '1';
     }, 100);
 });
+
+async function loadBlogs() {
+    try {
+        const response = await fetch('blog.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch blog data');
+        }
+
+        const blogs = await response.json();
+        const container = document.getElementById('blog-container');
+
+        blogs.forEach(blog => {
+            const post = document.createElement('div');
+            post.innerHTML = `
+                <h2>${blog.title}</h2>
+                <p>${blog.summary}</p>
+                <hr>
+            `
+            container.appendChild(post);
+        });
+    } catch (error) {
+        console.error('Error loading blogs:', error);
+    }
+}
+
+loadBlogs();

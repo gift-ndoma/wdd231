@@ -460,3 +460,25 @@ main {
         padding: 1rem;
     }
 }
+
+.blog-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.blog-section > h2 {
+    text-align: center;
+    margin: 1rem;
+    color: #2c5530;
+}
+
+#blog-container div {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#blog-container div h2 {
+    color: #2e7d32;
+}
